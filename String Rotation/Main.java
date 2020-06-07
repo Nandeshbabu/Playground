@@ -1,0 +1,19 @@
+a=input()
+b=input()
+m=len(a)
+n=len(b)
+a=list(''.join(a))
+b=list(''.join(b))
+if(m!=n):
+  print("No")
+else:
+  flag=1
+  for i in range(0,m):
+    if(a==b):
+      flag=0
+      break
+    a.append(a.pop(0)) 
+  if(flag==0):
+    print("Yes")
+  else:
+    print("No")
